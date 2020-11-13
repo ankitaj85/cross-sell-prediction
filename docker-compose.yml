@@ -8,7 +8,6 @@ services:
     environment:
       - NVIDIA_VISIBLE_DEVICES=all
     tty: true  
-    runtime: nvidia
     ports: 
       - "8080:8080"
     command: python transfer_learning_with_keras/build_tf_record.py   
